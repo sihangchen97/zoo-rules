@@ -17,7 +17,8 @@ cp conda.md .roo/rules/
 ```bash
 git clone https://github.com/sihangchen97/zoo-rules.git .roo/zoo-rules
 mkdir -p .roo/rules
-ln -s .roo/zoo-rules/conda.md .roo/rules/
+cd .roo/rules
+ln -s ../zoo-rules/conda.md .
 ```
 
 ### Option C: Submodule + symlinks (workspace IS a git repo)
@@ -25,7 +26,8 @@ ln -s .roo/zoo-rules/conda.md .roo/rules/
 ```bash
 git submodule add https://github.com/sihangchen97/zoo-rules.git .roo/zoo-rules
 mkdir -p .roo/rules
-ln -s .roo/zoo-rules/conda.md .roo/rules/
+cd .roo/rules
+ln -s ../zoo-rules/conda.md .
 ```
 
 ## Available Rules
