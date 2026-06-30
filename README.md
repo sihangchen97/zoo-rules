@@ -14,7 +14,7 @@ cp ponytail.md ~/.roo/rules/
 
 ```bash
 # Add as submodule inside .roo/
-git -C ~/.roo/ submodule add <repo-url> zoo-rules
+git -C ~/.roo/ submodule add https://github.com/sihangchen97/zoo-rules.git zoo-rules
 
 # Link the rules you want
 mkdir -p ~/.roo/rules
