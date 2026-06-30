@@ -4,21 +4,28 @@ Curated `.md` rule files for Roo Code agents. Each file drops directly into `.ro
 
 ## Quick Install
 
+Paths below are workspace-relative. For global install, replace `.roo/` with `~/.roo/`.
+
 ### Option A: Copy individual files
 
 ```bash
-cp ponytail.md ~/.roo/rules/
+cp conda.md .roo/rules/
 ```
 
-### Option B: Submodule + symlinks (recommended for updates)
+### Option B: Clone + symlinks (workspace is NOT a git repo)
 
 ```bash
-# Add as submodule inside .roo/
-git -C ~/.roo/ submodule add https://github.com/sihangchen97/zoo-rules.git zoo-rules
+git clone https://github.com/sihangchen97/zoo-rules.git .roo/zoo-rules
+mkdir -p .roo/rules
+ln -s .roo/zoo-rules/conda.md .roo/rules/
+```
 
-# Link the rules you want
-mkdir -p ~/.roo/rules
-ln -s ~/.roo/zoo-rules/ponytail.md ~/.roo/rules/
+### Option C: Submodule + symlinks (workspace IS a git repo)
+
+```bash
+git submodule add https://github.com/sihangchen97/zoo-rules.git .roo/zoo-rules
+mkdir -p .roo/rules
+ln -s .roo/zoo-rules/conda.md .roo/rules/
 ```
 
 ## Available Rules
