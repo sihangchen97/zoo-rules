@@ -1,0 +1,1 @@
+third-party/ponytail/.clinerules/ponytail.md
