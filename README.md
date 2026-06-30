@@ -25,6 +25,7 @@ ln -s ~/.roo/zoo-rules/ponytail.md ~/.roo/rules/
 
 | File | Description |
 |------|-------------|
+| [`conda.md`](conda.md) | Activate conda env (`$ZOO_CONDA_ENV`) before running python/pip |
 | [`ponytail.md`](ponytail.md) | Lazy senior dev mode — YAGNI, reuse, minimum code |
 | [`python-file-header.md`](python-file-header.md) | Python file header instruction |
 
